@@ -132,7 +132,7 @@ function registerUser()
   if($run)
   {
     //if query works, redirect to login page
-    header("location: signin.php");
+    header("location: signin.html");
   }
   else
   {
@@ -193,7 +193,7 @@ function userLogin()
       $_SESSION['username'] = $username;
 
       //if all is successful, redirect to landing page.
-      header("location: landingpage.php");
+      header("location: landingpage.html");
     }
     else {
       echo "Incorrect Login Details. Try Again.";
@@ -238,7 +238,7 @@ function userLogin()
       if ($results)
       {
         //if all is successful, redirect to landing page.
-        header("location: admindashboard.php");
+        header("location: admindashboard.html");
       }
       else {
         echo "Incorrect Login Details. Try Again.";

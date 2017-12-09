@@ -1,0 +1,38 @@
+#signupheading
+{
+  text-align: center;
+}
+
+#appheading
+{
+  background-color: yellow;
+  text-align: center;
+}
+
+#info
+{
+  text-align: justify;
+  padding: 20px;
+}
+
+#aboutapp
+{
+  text-align: center;
+}
+
+#signinheading
+{
+  text-align: center;
+}
+
+#form
+{
+  padding: 50px;
+}
+
+#welcomeheading
+{
+  text-align: center;
+  background-color: yellow;
+
+}

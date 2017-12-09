@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!--Import materialize.css-->
+       <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="mycss.css"  media="screen,projection"/>
+
+       <!-- Compiled and minified CSS online-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+       <!--Let browser know website is optimized for mobile-->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+<body>
+  <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="materialize.min.js"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <?php
+    require_once('processunsecure.php');
+    session_start();
+    ?>
+
+  <h5 id="welcomeheading">  Welcome Back:  <?php echo $_SESSION['username']; ?> </h5>
+
+  <div class="row">
+     <div class="col s12 m4">
+       <div class="card-panel yellow">
+         <div class="card-content black-text">
+           <span class="card-title" style="text-align:center">Report an Incident</span>
+           <p >Seen something bad? <br><br> Something harmful to the society or causing harm to a person or persons? <br><br> Be a good citizen and:
+             <div class="card-action">
+               <a href="writepost.php" style="color:black;text-decoration:underline" style="">Report it!</a></p>
+         </div>
+       </div>
+     </div>
+   </div>
+     <!-- <div class="col s12 m4">
+       <div class="card-panel teal">
+         <div class="card-content white-text">
+           <span class="card-title" style="text-align:center">Praise someone or something</span>
+           <p >Seen something good? Something beneficial to the society? <br><br> Someone doing good in society? <br><br> Be a good citizen and:
+             <div class="card-action">
+               <a href="writepost.php" style="color:white;text-decoration:underline"  >Praise them!</a></p>
+             </div>
+           </div>
+       </div>
+     </div> -->
+     <div class="col s12 m4">
+       <div class="card-panel pink lighten-3">
+         <div class="card-content black-text">
+           <span class="card-title" style="text-align:center">Police, Ambulance, Fire Service? <br><br> Authority Institution? </span>
+           <p>Want to see more detailed information about incidents? <br><br>See more information. <br>
+             <div class="card-action">
+               <a href="adminlogin.php" style="color:black;text-decoration:underline">Login to View</a></p>
+             </div>
+           </div>
+       </div>
+     </div>
+   </div>
+
+    <h4> Recent Posts </h4>
+
+
+
+
+   </body>
+   </html>

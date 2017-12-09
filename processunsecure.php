@@ -254,7 +254,7 @@ function userLogin()
     //try and get the username from the session.
     session_start();
 
-    $reporter = "";
+    $id = "";
     $type = $_POST['type'];
     $other = $_POST['other'];
     $details = $_POST['textarea'];
@@ -262,7 +262,7 @@ function userLogin()
     //write sql
     if($type == "other")
     {
-    $sql = "INSERT INTO incidents(reporter,type,details) VALUES ('$reporter','$other','$details')";
+    $sql = "INSERT INTO incidents(type,details) VALUES ($other','$details')";
 
     $db = new Connect;
 

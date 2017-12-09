@@ -71,6 +71,7 @@ function saveimage($name, $image)
   if($result)
   {
     echo "Picture uploaded";
+    
   }
 }
 

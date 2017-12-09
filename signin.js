@@ -13,7 +13,10 @@ function signin()
     $.ajax({
       type: "POST",
       url: "signin.php",
-      data: info,
+      data{
+        username: username,
+        password: password
+      },
       cache: false,
       success: function(html) {
         alert(html);

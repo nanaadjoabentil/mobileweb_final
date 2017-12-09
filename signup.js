@@ -18,7 +18,15 @@ function signup()
     $.ajax({
       type: "POST",
       url: "signup.php",
-      data: info,
+      data{
+        fullname: fullname,
+        age: age,
+        username: username,
+        password: password,
+        tel: tel,
+        email: email,
+        org: org  
+      },
       cache: false,
       success: function(html) {
         alert(html);

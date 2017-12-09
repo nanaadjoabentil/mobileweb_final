@@ -11,7 +11,7 @@
 
     <author href="http://npontu.com.com" email="nana.bentil@ashesi.edu.gh"></author>
 
-    <content src="index.php"></content>
+    <content src="index.html"></content>
 
   <feature>
     <param name="android-package" value="org.apache.cordova.device.Device" />
